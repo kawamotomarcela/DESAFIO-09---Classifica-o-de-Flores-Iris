@@ -1,0 +1,285 @@
+:root {
+    --roxo-950: #160022;
+    --roxo-900: #240046;
+    --roxo-800: #3c096c;
+    --roxo-700: #5a189a;
+    --roxo-600: #7b2cbf;
+    --roxo-500: #9d4edd;
+    --roxo-300: #d8b4fe;
+    --roxo-200: #ead7ff;
+    --roxo-100: #f7efff;
+    --branco: #ffffff;
+    --texto: #24142f;
+    --texto-suave: #574663;
+    --borda: #d8b4fe;
+    --sombra: 0 10px 28px rgba(90, 24, 154, 0.12);
+}
+
+.stApp {
+    background: linear-gradient(135deg, #fbf8ff 0%, #f2e7ff 45%, #ead7ff 100%);
+    color: var(--texto);
+}
+
+.block-container {
+    max-width: 1120px;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+div[data-testid="stDecoration"] {
+    background: linear-gradient(90deg, var(--roxo-900), var(--roxo-600), var(--roxo-300));
+}
+
+
+button[data-testid="stBaseButton-headerNoPadding"] svg,
+button[data-testid="stBaseButton-headerNoPadding"] svg path {
+    color: #000000 !important;
+}
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, var(--roxo-950) 0%, var(--roxo-900) 45%, var(--roxo-800) 100%);
+    border-right: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 2rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3 {
+    color: #ffffff !important;
+    font-weight: 400;
+}
+
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label {
+    color: #f6edff !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stVerticalBlockBorderWrapper"] {
+    background: rgba(255, 255, 255, 0.09) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    border-radius: 18px !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.22);
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 1rem 1rem;
+    margin-bottom: 1.2rem;
+    box-shadow: var(--sombra);
+}
+
+.hero-badge {
+    color: var(--roxo-700);
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+}
+
+h1 {
+    color: var(--roxo-900) !important;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--roxo-900) !important;
+    font-weight: 800;
+    border-left: 5px solid var(--roxo-600);
+    padding-left: 1rem;
+}
+
+h3 {
+    color: var(--roxo-800) !important;
+    font-weight: 700;
+}
+
+p, span, label, div {
+    color: var(--texto);
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"] {
+    background: #ffffff;
+    border: 1px solid var(--borda);
+    border-radius: 22px;
+    padding: 1rem;
+}
+
+.stNumberInput input {
+    background-color: #ffffff !important;
+    color: var(--roxo-900) !important;
+    border-radius: 10px !important;
+}
+
+.stNumberInput input:focus {
+    border-color: var(--roxo-600) !important;
+    box-shadow: 0 0 0 2px rgba(123, 44, 191, 0.18) !important;
+}
+
+button[title="Decrement"],
+button[title="Increment"] {
+    background-color: #211827 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.stButton > button,
+.stFormSubmitButton > button {
+    background: linear-gradient(135deg, var(--roxo-700), var(--roxo-600));
+    color: #ffffff !important;
+    border: none;
+    border-radius: 12px;
+    padding: 0.75rem 1.3rem;
+    font-weight: 800;
+    box-shadow: 0 7px 18px rgba(90, 24, 154, 0.25);
+    transition: 0.2s ease-in-out;
+}
+
+.stButton > button:hover,
+.stFormSubmitButton > button:hover {
+    background: linear-gradient(135deg, var(--roxo-600), var(--roxo-500));
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+div[data-testid="stAlert"] {
+    background: #efe1ff;
+    color: var(--roxo-900);
+    border-radius: 14px;
+    border: 1px solid var(--borda);
+}
+
+div[data-testid="stAlert"] * {
+    color: var(--roxo-900) !important;
+}
+
+.result-card {
+    background: #ffffff;
+    border-left: 6px solid var(--roxo-600);
+    border-radius: 20px;
+    padding: 1.4rem;
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    box-shadow: var(--sombra);
+}
+
+.result-icon {
+    font-size: 2.6rem;
+    line-height: 1;
+}
+
+.result-label {
+    color: var(--roxo-700) !important;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.result-card h2 {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: var(--roxo-900) !important;
+}
+
+.result-card p {
+    color: var(--texto) !important;
+}
+
+details {
+    background: #ffffff !important;
+    border: 1px solid var(--borda) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 6px 18px rgba(90, 24, 154, 0.08);
+    margin-top: 1rem;
+}
+
+summary {
+    color: var(--roxo-900) !important;
+    font-weight: 800;
+}
+
+details p,
+details span,
+details div {
+    color: var(--texto) !important;
+}
+
+div[data-testid="stDataFrame"] {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--borda);
+}
+
+a {
+    color: var(--roxo-700) !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--roxo-900) !important;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .block-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 6rem;
+    }
+
+    .hero {
+        padding: 1.5rem 1.2rem;
+        border-radius: 18px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    .result-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button[data-testid="stBaseButton-headerNoPadding"] {
+        width: 34px !important;
+        height: 34px !important;
+        border-radius: 9px !important;
+    }
+}
