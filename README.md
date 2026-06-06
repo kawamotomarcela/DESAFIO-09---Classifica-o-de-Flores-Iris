@@ -64,9 +64,8 @@ Os resultados mostram que o modelo teve um bom desempenho geral. A espécie **Se
 A aplicação permite que o usuário informe as quatro medidas da flor e receba a espécie prevista pelo modelo.
 
 **Link do app Streamlit:**  
-Inserir aqui após o deploy.
 
-https://SEU-LINK-AQUI.streamlit.app/
+https://desafio-09---classifica-o-de-flores-iris-rsm3to3kedfam67ka9edf.streamlit.app/
 
 ---
 
